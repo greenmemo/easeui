@@ -539,6 +539,25 @@ public class EaseChatFragment extends EaseBaseFragment implements EMMessageListe
                 }
             }
 
+
+            // ============================= group_reform new add api begin
+            @Override
+            public void onAddMutes(String chatRoomId, List<String> mutes) {}
+
+            @Override
+            public void onRemoveMutes(String chatRoomId, List<String> mutes) {}
+
+            @Override
+            public void onAddAdmin(String chatRoomId, String admin) {}
+
+            @Override
+            public void onRemoveAdmin(String chatRoomId, String admin) {}
+
+            @Override
+            public void onAssignOwner(String chatRoomId, String owner) {}
+
+            // ============================= group_reform new add api end
+
         };
         
         EMClient.getInstance().chatroomManager().addChatRoomChangeListener(chatRoomChangeListener);
@@ -998,6 +1017,7 @@ public class EaseChatFragment extends EaseBaseFragment implements EMMessageListe
                 }
             });
         }
+
 
     }
     
