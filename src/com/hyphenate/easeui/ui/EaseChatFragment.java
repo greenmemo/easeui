@@ -503,7 +503,6 @@ public class EaseChatFragment extends EaseBaseFragment implements EMMessageListe
             }
         });
     }
-    
 
     protected void addChatRoomChangeListenr() {
         chatRoomChangeListener = new EMChatRoomChangeListener() {
@@ -554,7 +553,7 @@ public class EaseChatFragment extends EaseBaseFragment implements EMMessageListe
             public void onRemoveAdmin(String chatRoomId, String admin) {}
 
             @Override
-            public void onAssignOwner(String chatRoomId, String owner) {}
+            public void onAssignOwner(String chatRoomId, String newOwner, String oldOwner) {}
 
             // ============================= group_reform new add api end
 
