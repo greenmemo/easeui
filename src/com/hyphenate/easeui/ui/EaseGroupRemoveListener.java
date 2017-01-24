@@ -3,6 +3,7 @@ package com.hyphenate.easeui.ui;
 import com.hyphenate.EMGroupChangeListener;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * group change listener
@@ -54,7 +55,7 @@ public abstract class EaseGroupRemoveListener implements EMGroupChangeListener{
     // ============================= group_reform new add api begin
 
     @Override
-    public void onAddMuteList(String groupId, final List<String> mutes) {
+    public void onAddMuteList(String groupId, final Map<String, Long> mutes) {
 
     }
 

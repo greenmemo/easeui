@@ -58,6 +58,7 @@ import com.hyphenate.util.PathUtil;
 
 import java.io.File;
 import java.util.List;
+import java.util.Map;
 
 /**
  * you can new an EaseChatFragment to use or you can inherit it to expand.
@@ -541,7 +542,7 @@ public class EaseChatFragment extends EaseBaseFragment implements EMMessageListe
 
             // ============================= group_reform new add api begin
             @Override
-            public void onAddMuteList(String chatRoomId, List<String> mutes) {}
+            public void onAddMuteList(String chatRoomId, Map<String, Long> mutes) {}
 
             @Override
             public void onRemoveMuteList(String chatRoomId, List<String> mutes) {}
