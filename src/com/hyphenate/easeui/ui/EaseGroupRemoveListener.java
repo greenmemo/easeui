@@ -55,27 +55,27 @@ public abstract class EaseGroupRemoveListener implements EMGroupChangeListener{
     // ============================= group_reform new add api begin
 
     @Override
-    public void onAddMuteList(String groupId, final Map<String, Long> mutes) {
+    public void onMuteListAdded(String groupId, final Map<String, Long> mutes) {
 
     }
 
     @Override
-    public void onRemoveMuteList(String groupId, final List<String> mutes) {
+    public void onMuteListRemoved(String groupId, final List<String> mutes) {
 
     }
 
     @Override
-    public void onAddAdministrator(String groupId, String administrator) {
+    public void onAdminAdded(String groupId, String administrator) {
 
     }
 
     @Override
-    public void onRemoveAdministrator(String groupId, String administrator) {
+    public void onAdminRemoved(String groupId, String administrator) {
 
     }
 
     @Override
-    public void onChangeOwner(String groupId, String newOwner, String oldOwner) {
+    public void onOwnerChanged(String groupId, String newOwner, String oldOwner) {
 
     }
     // ============================= group_reform new add api end
